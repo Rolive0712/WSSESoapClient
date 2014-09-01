@@ -1,3 +1,3 @@
 WSSESoapClient
 ==============
-1. Add web service reference to create the proxy.
+1. Add web service reference for the cmp service wsdl url to create the proxy.
