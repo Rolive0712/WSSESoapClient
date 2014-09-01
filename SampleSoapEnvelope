@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header>
+      <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" SOAP-ENV:actor="uri:orderUser" >
+         <wsse:UsernameToken>
+            <wsse:Username>admin</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">admin</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </SOAP-ENV:Header>
+   <SOAP-ENV:Body>
+      <ns3:createOrder xmlns:ns3="http://marketplace.citigroup.net" xmlns:ns2="java:com.citi.csd.types">
+         <ns3:OrderByGeid>1010169807</ns3:OrderByGeid>
+         <ns3:OrderForGeid>1010169807</ns3:OrderForGeid>
+         <ns3:ProductId>48314_28698_GLOBAL</ns3:ProductId>
+         <ns3:Attributes>
+            <ns3:Attr>
+               <ns2:Name>test-attr</ns2:Name>
+               <ns2:Value>This is the test value of an attribute</ns2:Value>
+            </ns3:Attr>
+         </ns3:Attributes>
+      </ns3:createOrder>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
