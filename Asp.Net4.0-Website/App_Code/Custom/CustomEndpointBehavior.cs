@@ -137,10 +137,7 @@ namespace Custom
 
         protected override void OnWriteStartHeader(XmlDictionaryWriter writer, MessageVersion messageVersion)
         {
-            //base.OnWriteStartHeader(writer, messageVersion);
-            //writer.WriteXmlnsAttribute(PREFIX_CP, "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd");
-            //writer.WriteAttributeString("SOAP-ENV:actor", "uri:orderUser");
-
+            
             writer.WriteStartElement(PREFIX_CP, Name, Namespace);
             writer.WriteXmlnsAttribute(PREFIX_CP, Namespace);
             writer.WriteAttributeString("SOAP-ENV:actor", "uri:orderUser");
