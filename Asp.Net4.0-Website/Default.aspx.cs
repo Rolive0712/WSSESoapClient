@@ -39,8 +39,8 @@ public partial class _Default : System.Web.UI.Page
 
         orderExtWSClient.Endpoint.Behaviors.Add(new CustomEndpointBehavior());
 
-        var orderResult = orderExtWSClient.createOrder("1010169807", "1010169807", "48314_28698_GLOBAL", null, null);
-        var orderWithItems = orderExtWSClient.createOrderWithItems("1010169807", "1010169807", "48314_28698_GLOBAL", null, null);
+        var orderResult = orderExtWSClient.createOrder("<pass params>");
+        var orderWithItems = orderExtWSClient.createOrderWithItems("<pass params>");
 
     }
 }
